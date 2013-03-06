@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Copyright (c) 2012, the Dart project authors.  Please see the AUTHORS file
+     for details. All rights reserved. Use of this source code is governed by a
+     BSD-style license that can be found in the LICENSE file. -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="clock.css">
+    <link href='http://fonts.googleapis.com/css?family=Exo:800' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+
+    <div id="canvas-content"></div>
+    
+    <h1 class='info'>Set an Alarm</h1>
+    <h2>*pop-ups should be unblocked for use</h2>
+      <div>
+        <input id="add-alarm" type="time">
+        <button id="submit">Set Alarm</button>
+        
+        <h1> Set a Song </h1>
+        <input id="alarm-play" type="text" placeholder="Put your URL here"><button id="setSong">Submit</button>
+        <ul id = "playing"></ul>
+        
+        
+      </div>
+      <div>
+        <ul id="my-alarms">
+        </ul>
+      </div>
+      
+
+    <footer>
+      <p id="summary"> </p>
+      <p id="notes"> </p>
+      <p id="information">Base Dart code on Github <a href="https://github.com/dletion/AlarmClock">here</a></p>
+    </footer>
+
+    <script type="application/dart" src="clock.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
